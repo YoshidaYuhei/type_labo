@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Keep transpiling RN Web for SSR/edge compatibility
+  transpilePackages: ["react-native-web"],
 };
 
 export default nextConfig;
